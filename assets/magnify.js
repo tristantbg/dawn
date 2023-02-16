@@ -4,6 +4,7 @@ function createOverlay(image) {
   overlay.setAttribute('class', 'image-magnify-full-size');
   overlay.setAttribute('aria-hidden', 'true');
   overlay.style.backgroundImage = `url('${image.src}')`;
+  overlay.style.backgroundColor = 'var(--gradient-background)';
   image.parentElement.insertBefore(overlay, image);
   return overlay;
 };
